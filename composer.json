@@ -10,7 +10,7 @@
     }],
     "require": {
         "php": "^7.4",
-        "lostlink/ark-client": "^1.0",
+        "lostlink/ark-client": "dev-master",
         "graham-campbell/manager": "^4.0",
         "illuminate/support": "^6.0|^7.0|^8.0"
     },
