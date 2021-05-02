@@ -1,5 +1,5 @@
 {
-    "name": "arkecosystem/laravel",
+    "name": "lostlink/ark-laravel",
     "description": "A Laravel bridge for Ark Core.",
     "keywords": ["laravel", "ark", "blockchain", "crypto", "currency"],
     "license": "MIT",
@@ -10,7 +10,7 @@
     }],
     "require": {
         "php": "^7.4",
-        "arkecosystem/client": "^1.0",
+        "lostlink/ark-client": "^1.0",
         "graham-campbell/manager": "^4.0",
         "illuminate/support": "^6.0|^7.0|^8.0"
     },
@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ArkEcosystem\\Ark\\": "src/"
+            "Lostlink\\Ark\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ArkEcosystem\\Tests\\Ark\\": "tests"
+            "Lostlink\\Tests\\Ark\\": "tests"
         }
     },
     "config": {
@@ -39,10 +39,10 @@
         },
         "laravel": {
             "providers": [
-                "ArkEcosystem\\Ark\\ArkServiceProvider"
+                "Lostlink\\Ark\\ArkServiceProvider"
             ],
             "aliases": {
-                "Ark": "ArkEcosystem\\Ark\\Facades\\Ark"
+                "Ark": "Lostlink\\Ark\\Facades\\Ark"
             }
         }
     },

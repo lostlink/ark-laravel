@@ -11,9 +11,9 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Ark;
+namespace Lostlink\Ark;
 
-use ArkEcosystem\Client\Connection;
+use Lostlink\Ark\Client\Connection;
 use Illuminate\Support\Arr;
 use InvalidArgumentException;
 
@@ -29,7 +29,7 @@ class ArkFactory
      *
      * @param array $config
      *
-     * @return \ArkEcosystem\Client\Connection
+     * @return \Lostlink\Ark\Client\Connection
      */
     public function make(array $config): Connection
     {
@@ -65,7 +65,7 @@ class ArkFactory
      *
      * @param array $config
      *
-     * @return \ArkEcosystem\Client\Connection
+     * @return \Lostlink\Ark\Client\Connection
      */
     protected function getClient(array $config): Connection
     {

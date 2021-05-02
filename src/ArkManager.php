@@ -11,9 +11,9 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace ArkEcosystem\Ark;
+namespace Lostlink\Ark;
 
-use ArkEcosystem\Client\Connection;
+use Lostlink\Ark\Client\Connection;
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
 
@@ -27,15 +27,15 @@ class ArkManager extends AbstractManager
     /**
      * The factory instance.
      *
-     * @var \ArkEcosystem\Ark\ArkFactory
+     * @var \Lostlink\Ark\ArkFactory
      */
     private $factory;
 
     /**
      * Create a new Ark manager instance.
      *
-     * @param \Illuminate\Contracts\Config\Repository $config
-     * @param \ArkEcosystem\Ark\ArkFactory                    $factory
+     * @param  \Illuminate\Contracts\Config\Repository  $config
+     * @param  \Lostlink\Ark\ArkFactory  $factory
      */
     public function __construct(Repository $config, ArkFactory $factory)
     {
@@ -47,7 +47,7 @@ class ArkManager extends AbstractManager
     /**
      * Get the factory instance.
      *
-     * @return \ArkEcosystem\Ark\ArkFactory
+     * @return \Lostlink\Ark\ArkFactory
      */
     public function getFactory(): ArkFactory
     {
@@ -57,9 +57,9 @@ class ArkManager extends AbstractManager
     /**
      * Create the connection instance.
      *
-     * @param array $config
+     * @param  array  $config
      *
-     * @return \ArkEcosystem\Client\Connection
+     * @return \Lostlink\Ark\Client\Connection
      */
     protected function createConnection(array $config): Connection
     {
